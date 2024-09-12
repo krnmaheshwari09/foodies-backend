@@ -7,7 +7,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 dotenv.config();
 
-const mongooseUrl = process.env.MONGO_URI;
+const mongooseUrl = `${process.env.MONGO_URI}`;
 const app = express()
 const PORT = process.env.PORT || 5000;
 

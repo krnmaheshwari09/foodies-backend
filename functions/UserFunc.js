@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken';
 import dotenv from "dotenv";
 dotenv.config();
 
-const jwtSecretKey = process.env.SECRET_KEY;
+const jwtSecretKey = `${process.env.SECRET_KEY}`;
 
 const createUser = async (req, res) => {
     const error = validationResult(req);
