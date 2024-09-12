@@ -9,7 +9,7 @@ dotenv.config();
 
 const mongooseUrl = `${process.env.MONGO_URI}`;
 const app = express()
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 connectMongo(mongooseUrl);
 app.get('/', (req, res) => {
